@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Korhogo Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🛒 Korhogo Shop</h1>
+  <p>Vendez facilement vos articles personnels</p>
+
+  <input id="pseudoInput" placeholder="Entrez votre pseudo vendeur">
+  <button onclick="setPseudo()">Valider</button>
+</header>
+
+<section id="addSection" class="hidden">
+
+<h2>Ajouter un article</h2>
+
+<input id="nom" placeholder="Nom de l'article">
+<input id="prix" placeholder="Prix (FCFA)">
+<textarea id="desc" placeholder="Description"></textarea>
+
+<input type="file" id="image" accept="image/*">
+
+<button onclick="addArticle()">Publier</button>
+
+</section>
+
+<h2 class="center">Articles en vente</h2>
+
+<div id="articles"></div>
+
+<footer>
+Korhogo Shop © 2026
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
